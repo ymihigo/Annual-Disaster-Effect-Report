@@ -23,68 +23,68 @@ public class Disasterz {
 	private int missing;
 	private int houseDemaged;
 	private int cropsDemaged;
-	private int liveStock;
+	private int liveStoock;
 	private int schools;
 	private int roads;
 	private int bridges;
 	private String province;
 	private String district;
-	private String sector;
+	private String sectoor;
 	private String village;
 	@ManyToOne
 	private DisasterType type;
 	@Temporal(TemporalType.DATE)
-//	@JsonFormat(shape = Shape.STRING, pattern = "dd-MM-yyyy")
-	private Date from;
+	@JsonFormat(shape = Shape.STRING, pattern = "dd-MM-yyyy")
+	private Date fromm;
 	@Temporal(TemporalType.DATE)
-//	@JsonFormat(shape = Shape.STRING, pattern = "dd-MM-yyyy")
-	private Date to;
+	@JsonFormat(shape = Shape.STRING, pattern = "dd-MM-yyyy")
+	private Date too;
 
 	public Disasterz() {
 		super();
 	}
 
-	public Disasterz(int id, int deaths, int injured, int missing, int houseDemaged, int cropsDemaged, int liveStock,
-			int schools, int roads, int bridges, String province, String district, String sector, String village,
-			DisasterType type, Date from, Date to) {
+	public Disasterz(int id, int deaths, int injured, int missing, int houseDemaged, int cropsDemaged, int liveStoock,
+			int schools, int roads, int bridges, String province, String district, String sectoor, String village,
+			DisasterType type, Date fromm, Date too) {
 		this.id = id;
 		this.deaths = deaths;
 		this.injured = injured;
 		this.missing = missing;
 		this.houseDemaged = houseDemaged;
 		this.cropsDemaged = cropsDemaged;
-		this.liveStock = liveStock;
+		this.liveStoock = liveStoock;
 		this.schools = schools;
 		this.roads = roads;
 		this.bridges = bridges;
 		this.province = province;
 		this.district = district;
-		this.sector = sector;
+		this.sectoor = sectoor;
 		this.village = village;
 		this.type = type;
-		this.from = from;
-		this.to = to;
+		this.fromm = fromm;
+		this.too = too;
 	}
 
-	public Disasterz(int deaths, int injured, int missing, int houseDemaged, int cropsDemaged, int liveStock,
-			int schools, int roads, int bridges, String province, String district, String sector, String village,
-			DisasterType type, Date from, Date to) {
+	public Disasterz(int deaths, int injured, int missing, int houseDemaged, int cropsDemaged, int liveStoock,
+			int schools, int roads, int bridges, String province, String district, String sectoor, String village,
+			DisasterType type, Date from, Date too) {
 		this.deaths = deaths;
 		this.injured = injured;
 		this.missing = missing;
 		this.houseDemaged = houseDemaged;
 		this.cropsDemaged = cropsDemaged;
-		this.liveStock = liveStock;
+		this.liveStoock = liveStoock;
 		this.schools = schools;
 		this.roads = roads;
 		this.bridges = bridges;
 		this.province = province;
 		this.district = district;
-		this.sector = sector;
+		this.sectoor = sectoor;
 		this.village = village;
 		this.type = type;
-		this.from = from;
-		this.to = to;
+		this.fromm = fromm;
+		this.too = too;
 	}
 
 	public int getId() {
@@ -135,12 +135,12 @@ public class Disasterz {
 		this.cropsDemaged = cropsDemaged;
 	}
 
-	public int getLiveStock() {
-		return liveStock;
+	public int getLiveStoock() {
+		return liveStoock;
 	}
 
-	public void setLiveStock(int liveStock) {
-		this.liveStock = liveStock;
+	public void setLiveStoock(int liveStoock) {
+		this.liveStoock = liveStoock;
 	}
 
 	public int getSchools() {
@@ -183,12 +183,12 @@ public class Disasterz {
 		this.district = district;
 	}
 
-	public String getSector() {
-		return sector;
+	public String getSectoor() {
+		return sectoor;
 	}
 
-	public void setSector(String sector) {
-		this.sector = sector;
+	public void setSectoor(String sectoor) {
+		this.sectoor = sectoor;
 	}
 
 	public String getVillage() {
@@ -207,19 +207,19 @@ public class Disasterz {
 		this.type = type;
 	}
 
-	public Date getFrom() {
-		return from;
+	public Date getFromm() {
+		return fromm;
 	}
 
-	public void setFrom(Date from) {
-		this.from = from;
+	public void setFrom(Date fromm) {
+		this.fromm = fromm;
 	}
 
-	public Date getTo() {
-		return to;
+	public Date gettoo() {
+		return too;
 	}
 
-	public void setTo(Date to) {
-		this.to = to;
+	public void settoo(Date too) {
+		this.too = too;
 	}
 }
